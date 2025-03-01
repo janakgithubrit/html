@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo-jewellry.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>registration Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        color: #333;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        max-width: 400px;
+        margin: auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .registration-form {
+        width: 100%;
+        padding: 20px;
+      }
+      .registration-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin: 10px 0 5px;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .register-button {
+        background: #222;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 100%;
+      }
+      .register-button:hover {
+        background: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="logo">Gemstone</div>
+      </div>
+      <nav class="navbar">
+        <a href="jewellry.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="signin.html">Sign In</a>
+      </nav>
+    </header>
+
+    <div class="sidebar">
+      <a href="jewellry.html"
+        ><img src="logo-jewellry.jpg" alt="logo" width="150px" height="150px"
+      /></a>
+      <h2>Menu</h2>
+      <div class="menu">
+        <a href="jewellry.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="signin.html">Sign In</a>
+      </div>
+      <h2>Categories</h2>
+      <div class="menu">
+        <a href="#rings">Rings</a>
+        <a href="#necklaces">Necklaces</a>
+        <a href="#bracelets">Bracelets</a>
+        <a href="#earrings">Earrings</a>
+        <a href="#earrings">Anklets</a>
+        <a href="#earrings">Juda Pin</a>
+        <a href="#earrings">Saree Pin</a>
+        <a href="#earrings">Dimond Chain</a>
+      </div>
+      <h2>Shop By Price</h2>
+      <div class="menu">
+        <select name="ltoh">
+          <option value="">Low To High</option>
+          <option value="">100 To 500</option>
+          <option value="">500 To 1000</option>
+          <option value="">1000 To 1500</option>
+          <option value="">2000 +</option></select
+        ><br /><br />
+        <select name="htol">
+          <option value="">High To Low</option>
+          <option value="">15000 +</option>
+          <option value="">10000 to 5000</option>
+          <option value="">5000 to 3000</option>
+          <option value="">3000 to 1000</option>
+        </select>
+      </div>
+    </div>
+
+    <section class="registration">
+      <h1 style="text-align: center;color: #fff;">Register</h1>
+      <div class="container">
+        <form class="registration-form" action="jewellry.html">
+          <h2>Create an Account</h2>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+
+          <button type="submit" class="register-button">Register</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social-media">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
